@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main App Container -->
+    <div id="app">
+        <!-- Header will be dynamically inserted here -->
+        <header id="header"></header>
+
+        <!-- Main Content will be dynamically inserted here -->
+        <main id="main-content"></main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Water Conservation Challenge</p>
+        </footer>
+
+        <!-- Modals -->
+        <div id="proofModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Submit Proof for: <span id="challengeTitle"></span></h3>
+                <div id="proofContainer"></div>
+                <button id="submitProofBtn" class="modal-button">Submit Proof</button>
+            </div>
+        </div>
+
+        <div id="certificateModal" class="modal">
+            <div class="modal-content certificate">
+                <span class="close-modal">&times;</span>
+                <div id="certificateContent">
+                    <div class="certificate-header">
+                        <h1>Certificate of Achievement</h1>
+                        <p>This certificate is proudly presented to</p>
+                        <h2 id="certificateName">[Participant Name]</h2>
+                    </div>
+                    <div class="certificate-body">
+                        <p>For successfully completing the Water Conservation Knowledge Quiz with a score of <span id="certificateScore">X</span>/10</p>
+                        <p>and demonstrating exceptional knowledge of water conservation practices.</p>
+                        <div class="certificate-date">
+                            <p>Awarded on: <span id="certificateDate">[Date]</span></p>
+                        </div>
+                    </div>
+                    <div class="certificate-footer">
+                        <div class="signature">
+                            <p>_________________________</p>
+                            <p>Water Conservation Challenge Team</p>
+                        </div>
+                        <div class="logo">
+                            <div style="width: 80px; height: 80px; background-color: #3498db; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 40px;">💧</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="printCertBtn" class="modal-button">Print Certificate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
